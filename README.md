@@ -24,6 +24,30 @@ When done print "File copied successfully".
 End of the program.
 
 ## PROGRAM:
+'''
+Program for copying the contents
+
+Developed by:G.R.Nandhakumar
+
+Reference number:22001737
+
+'''
+```
+print("Enter the name of source file: ")
+sFile=input()
+print("Enter the name of target file: ")
+tFile=input()
+fileHandle=open(sFile,"r")
+texts=fileHandle.readlines()
+fileHandle.close()
+
+fileHandle=open(tFile,"w")
+for s in texts:
+    fileHandle.write(s)
+fileHandle.close()
+
+print("\nFile Copied Successfully!")
+```
 
 ### OUTPUT:
 
