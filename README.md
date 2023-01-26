@@ -6,16 +6,22 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+Get the file name and location from the user.
 
 ### Step 2: 
+Give a new file name to create a copy of a file content
  
 ### Step 3: 
+Give a new file name to create a copy of a file content
 
-### Step 4:  
+### Step 4:
+Now write the content in the new file.
 
 ### Step 5: 
+When done print "File copied successfully".
 
-### Step 6: 
+### Step 6:
+End of the program.
 
 ## PROGRAM:
 
