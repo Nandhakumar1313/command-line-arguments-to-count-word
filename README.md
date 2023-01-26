@@ -6,53 +6,42 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-Get the file name and location from the user.
+import numpy as np
 
 ### Step 2: 
-Give a new file name to create a copy of a file content
+Enter the correct input values
  
 ### Step 3: 
-Give a new file name to create a copy of a file content
+write a python program for getting the word count from the contents of a file using command line
+arguments.
 
 ### Step 4:
-Now write the content in the new file.
+Use command line arguments
 
-### Step 5: 
-When done print "File copied successfully".
-
-### Step 6:
-End of the program.
+### Step 5:
+End the program
 
 ## PROGRAM:
 '''
-Program for copying the contents
+Program developed by:G.R.Nandhakumar
 
-Developed by:G.R.Nandhakumar
-
-Reference number:22001737
+Reference no:22001737
 
 '''
 ```
-print("Enter the name of source file: ")
-sFile=input()
-print("Enter the name of target file: ")
-tFile=input()
-fileHandle=open(sFile,"r")
-texts=fileHandle.readlines()
-fileHandle.close()
-
-fileHandle=open(tFile,"w")
-for s in texts:
-    fileHandle.write(s)
-fileHandle.close()
-
-print("\nFile Copied Successfully!")
+import sys 
+count=0 
+with open(sys.argv[1],'r') as file:
+    for line in file:
+        word= line.split()
+        count+= len(word)
+print("word count in file = ",count)
 ```
 
+
 ### OUTPUT:
-![commandcopy](https://user-images.githubusercontent.com/120230694/214801032-5b75dc01-6639-4c23-bd78-a5b0eeeadbcc.png)
-![copy1](https://user-images.githubusercontent.com/120230694/214801074-255a73a7-5100-487a-93fa-e18072c35f24.png)
-![copy2](https://user-images.githubusercontent.com/120230694/214801132-f777eeda-b1be-4fc6-9b1a-3a480e224914.png)
+![Screenshot from 2023-01-26 15-10-03](https://user-images.githubusercontent.com/120230694/214804051-e217e7b2-b385-4bf5-a925-6d8d1602c2cc.png)
+![Screenshot from 2023-01-26 15-11-07](https://user-images.githubusercontent.com/120230694/214804305-2de29ec8-6b37-4a55-baa7-db9b08d5da99.png)
 
 
 
